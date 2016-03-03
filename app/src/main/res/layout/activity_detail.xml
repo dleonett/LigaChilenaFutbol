@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context="com.danielleonett.ligachilenafutbol.DetailActivity">
+
+    <include layout="@layout/view_toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/activity_horizontal_margin"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/iv_escudo_local"
+            android:layout_width="@dimen/escudo_size_large_width"
+            android:layout_height="@dimen/escudo_size_large_height"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="8dp"
+            tools:src="@mipmap/ic_launcher"
+            android:contentDescription="@string/escudo_local" />
+
+        <TextView
+            android:id="@+id/tv_marcador"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="32sp"
+            android:textColor="@color/white"
+            tools:text="3 - 1"/>
+
+        <ImageView
+            android:id="@+id/iv_escudo_visita"
+            android:layout_width="@dimen/escudo_size_large_width"
+            android:layout_height="@dimen/escudo_size_large_height"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="4dp"
+            tools:src="@mipmap/ic_launcher"
+            android:contentDescription="@string/escudo_visita" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingBottom="16dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_nombre_local"
+            android:layout_width="@dimen/escudo_size_large_width"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/white"
+            tools:text="Nombre Local"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_estado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                tools:text="Finalizado"/>
+
+            <TextView
+                android:id="@+id/tv_hora_estado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/gray_400"
+                tools:text="19:58:50"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_nombre_visita"
+            android:layout_width="@dimen/escudo_size_large_width"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/white"
+            tools:text="Nombre Visita"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/windowBackground">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    card_view:cardBackgroundColor="@color/white"
+                    card_view:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/activity_vertical_margin"
+                        android:orientation="vertical"
+                        android:gravity="center_vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="bottom">
+
+                            <TextView
+                                style="@style/TextInfoTitle"
+                                android:text="@string/fecha"/>
+
+                            <TextView
+                                android:id="@+id/tv_fecha"
+                                style="@style/TextInfo"
+                                tools:text="19/05/1992"/>
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="@dimen/margin_top_text_info"
+                            android:layout_marginBottom="@dimen/margin_top_text_info"
+                            android:background="@color/gray_200"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_top_text_info"
+                            android:gravity="bottom">
+
+                            <TextView
+                                style="@style/TextInfoTitle"
+                                android:text="@string/hora"/>
+
+                            <TextView
+                                android:id="@+id/tv_hora"
+                                style="@style/TextInfo"
+                                tools:text="17:30"/>
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="@dimen/margin_top_text_info"
+                            android:layout_marginBottom="@dimen/margin_top_text_info"
+                            android:background="@color/gray_200"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_top_text_info"
+                            android:gravity="bottom">
+
+                            <TextView
+                                style="@style/TextInfoTitle"
+                                android:text="@string/estadio"/>
+
+                            <TextView
+                                android:id="@+id/tv_estadio"
+                                style="@style/TextInfo"
+                                tools:text="Estadio Nacional"/>
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="@dimen/margin_top_text_info"
+                            android:layout_marginBottom="@dimen/margin_top_text_info"
+                            android:background="@color/gray_200"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_top_text_info"
+                            android:gravity="bottom">
+
+                            <TextView
+                                style="@style/TextInfoTitle"
+                                android:text="@string/ciudad"/>
+
+                            <TextView
+                                android:id="@+id/tv_ciudad"
+                                style="@style/TextInfo"
+                                tools:text="Santiago de Chile"/>
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="@dimen/margin_top_text_info"
+                            android:layout_marginBottom="@dimen/margin_top_text_info"
+                            android:background="@color/gray_200"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_top_text_info"
+                            android:gravity="bottom">
+
+                            <TextView
+                                style="@style/TextInfoTitle"
+                                android:text="@string/arbitro"/>
+
+                            <TextView
+                                android:id="@+id/tv_arbitro"
+                                style="@style/TextInfo"
+                                tools:text="Pedro Pérez"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <include layout="@layout/view_shadow_top"/>
+
+    </FrameLayout>
+
+</LinearLayout>

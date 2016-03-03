@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/blue_gray</color>
+    <color name="colorPrimaryDark">@color/blue_gray_dark</color>
+    <color name="colorAccent">@color/pink</color>
+    <color name="windowBackground">#f3f3f3</color>
+
+    <!-- Palette -->
+    <color name="indigo">#3F51B5</color>
+    <color name="indigo_dark">#303F9F</color>
+    <color name="blue_gray">#28343A</color>
+    <color name="blue_gray_dark">#171D20</color>
+    <color name="pink">#FF4081</color>
+    <color name="black">#000000</color>
+    <color name="gray_900">#212121</color>
+    <color name="gray_850">#303030</color>
+    <color name="gray_800">#424242</color>
+    <color name="gray_700">#616161</color>
+    <color name="gray_600">#757575</color>
+    <color name="gray_500">#9E9E9E</color>
+    <color name="gray_400">#BDBDBD</color>
+    <color name="gray_300">#E0E0E0</color>
+    <color name="gray_250">#E7E7E7</color>
+    <color name="gray_200">#EEEEEE</color>
+    <color name="gray_transparency">#1f000000</color>
+    <color name="white">#ffffff</color>
+</resources>

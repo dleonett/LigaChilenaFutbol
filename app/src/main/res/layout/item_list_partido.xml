@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/padding_item_list"
+    android:paddingRight="@dimen/padding_item_list"
+    android:gravity="center_vertical"
+    android:clickable="true"
+    android:foreground="@drawable/selector_transparency"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/tv_nombre_local"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:textColor="@color/black"
+        tools:text="Nombre Local"/>
+
+    <ImageView
+        android:id="@+id/iv_escudo_local"
+        android:layout_width="@dimen/escudo_size"
+        android:layout_height="@dimen/escudo_size"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="8dp"
+        tools:src="@mipmap/ic_launcher"
+        android:contentDescription="@string/escudo_local" />
+
+    <TextView
+        android:id="@+id/tv_marcador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        tools:text="3 - 1"/>
+
+    <ImageView
+        android:id="@+id/iv_escudo_visita"
+        android:layout_width="@dimen/escudo_size"
+        android:layout_height="@dimen/escudo_size"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="4dp"
+        tools:src="@mipmap/ic_launcher"
+        android:contentDescription="@string/escudo_visita" />
+
+    <TextView
+        android:id="@+id/tv_nombre_visita"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        tools:text="Nombre Visita"/>
+
+</LinearLayout>
